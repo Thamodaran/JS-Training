@@ -1,0 +1,6 @@
+/*.negative-span::after {
+    content: "";
+}*/
+.positive-span::after {
+    content: "";
+}
