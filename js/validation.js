@@ -1,8 +1,8 @@
 function checkValidations(element) {
   var id = element.id;
   var thisElement = document.getElementById(id);
-  var errorSpan = document.getElementById("error_"+element.id);
-  if(element.id == 'positive-x'){
+  var errorSpan = document.getElementById("error_"+id);
+  if(id == 'positiveX'){
     if (element.value < 0) {
       setErrorStyle(thisElement, id, errorSpan);
       errorSpan.innerHTML = 'Positive values only Accept';
@@ -12,7 +12,7 @@ function checkValidations(element) {
       thisElement.setAttribute("style","border: 1px solid black;");
       errorSpan.style.display='none';
     }
-  } else if(element.id == 'negative-x'){
+  } else if(id == 'negativeX'){
     if (element.value > 0) {
         setErrorStyle(thisElement, id, errorSpan);
         errorSpan.innerHTML = 'Negative values only Accept';
@@ -22,7 +22,7 @@ function checkValidations(element) {
       thisElement.setAttribute("style","border: 1px solid black;");
       errorSpan.style.display='none';
     }
-  } else if(element.id == 'milli'){
+  } else if(id == 'microTick'){
     if (element.value > 9 || element.value < 0) {
         setErrorStyle(thisElement, id, errorSpan);
         errorSpan.innerHTML = 'Only 0-9 only accept';
