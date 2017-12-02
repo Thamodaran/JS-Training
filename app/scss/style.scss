@@ -1,0 +1,58 @@
+@import "_variables";
+body{
+  background-color: #76d7c4;
+}
+.inlineBlock {
+  display: inline-block;
+}
+.centerPoint {
+  @extend .inlineBlock;
+  border-left: 1.5px solid black; height: 25px;position: relative;right: 1px;
+}
+.left {
+  float: left;
+}
+.wrapper {
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+.textDiv {
+  width: 70%;height:10%;
+}
+.label {
+  width: 30%;height:10%;
+}
+.error {
+  display: none;color: red;
+}
+.errorMsg {
+  color: red;
+}
+.contentDiv {
+  width: $contentDivWidth;
+  margin-left: 150px;
+  height: 100px;
+}
+.borderTop {
+  border-top: 1.5px solid black;
+}
+.borderRight {
+  border-right: 1.5px solid black;
+}
+.borderLeft {
+  border-left: 1.5px solid black;
+}
+.microTick {
+  border-right: 1.5px solid black;
+  @extend .inlineBlock;
+  height: 10px;
+  &:last-child {
+    border-right: 0 solid black;
+  }
+}
+.header {
+  width: 100%; height: 10%; background-color: rgba(0, 0, 0, 0.7); color: #FFFFFF;padding: 2px;
+}
+.negativeValue {
+  position: relative;left: 1.5px;
+}
