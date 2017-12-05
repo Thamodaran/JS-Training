@@ -62,3 +62,7 @@ body {
 .negativeValue {
   position: relative;
   left: 1.5px; }
+
+.ruler {
+  background-color: #FFFFFF;
+  box-shadow: inset 0px 0px 50px #33ccff; }

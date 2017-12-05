@@ -23,7 +23,9 @@ function drawCenterPoint() {
 }
 function drawOtherPoints(negative, positive, microTick, negativeOrginal) {
   var negativeCount = 0;
-  var contentDivWidth = document.getElementsByClassName("contentDiv")[0].offsetWidth;
+  var contentDivEle = document.getElementsByClassName("contentDiv")[0];
+  contentDivEle.classList.add("ruler");
+  var contentDivWidth = contentDivEle.offsetWidth;
     var totalCenterLines = parseInt(negativeOrginal)+parseInt(positive);
     if(positive > 6 || negativeOrginal > 6) {
         var centerWidth = (contentDivWidth/totalCenterLines)-2;
